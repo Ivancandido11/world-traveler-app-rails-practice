@@ -12,8 +12,10 @@
 
   <header>
     <nav style="text-align:center">
-      <div><%= link_to "Travelers", travelers_path %></div>
-      <div><%= link_to "Countries", countries_path %></div>
+      <div>
+        <%= link_to "Travelers", travelers_path %>
+        <%= link_to "Countries", countries_path %>
+      </div>
     </nav>
   </header>
 
@@ -22,6 +24,6 @@
   </body>
 
   <footer>
-    <%= link_to "Create a new vacation", new_vacation_path %>
+    <%= render "layouts/new" %>
   </footer>
 </html>
