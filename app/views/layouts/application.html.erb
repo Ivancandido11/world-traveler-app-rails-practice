@@ -10,7 +10,18 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+  <header>
+    <nav style="text-align:center">
+      <div><%= link_to "Travelers", travelers_path %></div>
+      <div><%= link_to "Countries", countries_path %></div>
+    </nav>
+  </header>
+
   <body>
     <%= yield %>
   </body>
+
+  <footer>
+    <%= link_to "Create a new vacation", new_vacation_path %>
+  </footer>
 </html>

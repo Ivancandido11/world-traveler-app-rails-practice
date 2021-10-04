@@ -1,0 +1,14 @@
+<h1>New Vacation Form</h1>
+
+<div>
+  <%= form_for @vacation do |form| %>
+    <%= form.collection_select :country_id, @countries, :id, :name, include_blank: "Select Country" %>
+
+    <%= form.collection_select :traveler_id, @travelers, :id, :name, include_blank: "Select Traveler" %>
+
+    <%= form.label :favorite %>
+    <%= form.check_box :favorite %>
+
+    <%= form.submit %>
+  <% end %>
+<div><br><br>

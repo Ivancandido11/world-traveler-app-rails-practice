@@ -1,0 +1,8 @@
+<h1><%= @country.name %></h1><br><br>
+<p><%= @country.description %></p>
+
+<ul> Travelers:
+  <% @country.travelers.each do |traveler| %>
+    <li><%= link_to traveler.name, traveler %></li>
+  <% end %>
+</ul>
